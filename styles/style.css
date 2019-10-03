@@ -1,5 +1,5 @@
 html {
-    font-size: 150px;
+    font-size: 60px;
     /* px means "pixels": the base font size is now 10 pixels high  */
     font-family: Helvetica, "Open Sans", sans-serif;
     /* this should be the rest of the output you got from Google fonts */
@@ -9,6 +9,13 @@ html {
 
 body {
     color: blue;
+    line-height: 120%;
+}
+
+img {
+    display: block;
+    max-width: 800px;
+    padding: 10px;
 }
 
 p {

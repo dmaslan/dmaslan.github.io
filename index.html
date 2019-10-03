@@ -3,13 +3,44 @@
 
 <head>
     <meta charset="utf-8">
-    <title>WORKING MODELS</title>
-    <link href="styles/style.css" rel="stylesheet">
+    <title>FIVE POINTS</title>
+    <link href="styles/fivepointsstyle.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 
 <body>
-    <p lang="en">Lorem ipsum dolor sit amet, extraordinarily adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <!-- Tab links -->
+    <div class="tab">
+        <button class="tablinks red" onclick="openCity(event, 'Transparent')">Transparent</button>
+        <button class="tablinks orange" onclick="openCity(event, 'Thin')">Thin</button>
+        <button class="tablinks yellow" onclick="openCity(event, 'Representational')">Representational</button>
+        <button class="tablinks green" onclick="openCity(event, 'Custom')">Customized</button>
+        <button class="tablinks blue" onclick="openCity(event, 'Open Source')">Open Source</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="Transparent" class="tabcontent red">
+        <p>Transparent. An object should be an index of the digital tools and processes used to produce it, so as to make the influence of software as transparent as possible.</p>
+    </div>
+
+    <div id="Thin" class="tabcontent orange">
+        <p>In a digital environment, there is no such thing as thickness. All forms are hollow and their boundaries infinitely thin. If we acknowledge this in the analog world, our forms may be freed from certain material conventions.</p>
+    </div>
+
+    <div id="Representational" class="tabcontent yellow">
+        <p>A representation’s material(s) should act as placeholder(s), emulating the referent’s logic of assembly but not mimicking its material qualities.</p>
+    </div>
+
+    <div id="Custom" class="tabcontent green">
+        <p>Customized. It is no longer cheaper to produce the same thing 100 times than it is to produce 100 different things 1 time. Our designs need no longer be bound by the constraints of mass production and modularity.</p>
+    </div>
+
+    <div id="Open Source" class="tabcontent blue">
+        <p>Open Source. An object’s “source code” (all information required for its production) should be publicly accessible and embedded in its construction.</p>
+    </div>
+
+
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>
