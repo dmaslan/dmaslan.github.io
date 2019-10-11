@@ -5,6 +5,11 @@ html {
 
 /* Style the tab */
 
+p {
+    margin: 0;
+    padding: 0px 0 0 0;
+}
+
 .tab {
     overflow: hidden;
     /* background-color: #f1f1f1; */
@@ -21,13 +26,18 @@ html {
 
 /* Style the buttons that are used to open the tab content */
 
+#instructions {
+    padding: 8px 16px;
+    height: 15px
+}
+
 .tab button {
     background-color: inherit;
     float: left;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 10px 16px;
     transition: 0.3s;
 }
 
@@ -52,21 +62,42 @@ html {
 }
 
 
-/* Change background color of buttons on hover */
-
-.tab button:hover {}
-
-
-/* Create an active/current tablink class */
-
-.tab button.active {}
-
-
 /* Style the tab content */
 
 .tabcontent {
     display: none;
-    padding: 6px 12px;
-    border-top: none;
-    font-size: 32px
+    padding: 5rem 12px;
+    font-size: 32px;
+}
+
+img {
+    width: 300px;
+    position: absolute;
+}
+
+.draggable {
+    display: none;
+    width: 300px;
+    height: 300px;
+    border-radius: 6px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.05));
+    cursor: move;
+}
+
+@media screen and (max-width: 600px) {
+    .tablinks {
+        font-size: 2em;
+        width: 70%;
+        text-align: left;
+    }
+    #instructions {
+        display: none;
+    }
+    img {
+        width: 300px;
+        position: relative;
+    }
+    .draggable {
+        margin: 2rem auto 2rem auto
+    }
 }
