@@ -1,110 +1,109 @@
-                                            html {
-                                            font-family: Helvetica, sans-serif;
-                                        }
-                                        /* Style the tab */
-                                        
-                                        p {
-                                            margin: 0;
-                                            padding: 0px 0 0 0;
-                                        }
-                                        
-                                        .tab {
-                                            overflow: hidden;
-                                            margin-bottom: 4rem;
-                                            /* background-color: #f1f1f1; */
-                                        }
-                                        
-                                        .tablinks {
-                                            font-size: 60px;
-                                        }
-                                        
-                                        .tablinks.active {
-                                            text-decoration: underline;
-                                        }
-                                        /* Style the buttons that are used to open the tab content */
-                                        
-                                        #instructions {
-                                            margin-top: 1rem;
-                                            padding: 1rem 16px 1rem 16px;
-                                            height: 15px
-                                        }
-                                        
-                                        .tab button {
-                                            background-color: inherit;
-                                            float: left;
-                                            border: none;
-                                            outline: none;
-                                            cursor: pointer;
-                                            padding: 10px 16px;
-                                            transition: 0.3s;
-                                        }
-                                        
-                                        .red {
-                                            color: red;
-                                        }
-                                        
-                                        .orange {
-                                            color: orange;
-                                        }
-                                        
-                                        .yellow {
-                                            color: yellow;
-                                        }
-                                        
-                                        .green {
-                                            color: green;
-                                        }
-                                        
-                                        .blue {
-                                            color: blue;
-                                        }
-                                        /* Style the tab content */
-                                        
-                                        .tabcontent {
-                                            display: none;
-                                            padding: 0 12px 1rem 12px;
-                                            font-size: 32px;
-                                        }
-                                        
-                                        img {
-                                            width: 300px;
-                                            position: absolute;
-                                        }
-                                        
-                                        .draggable {
-                                            display: none;
-                                            width: 300px;
-                                            height: 300px;
-                                            border-radius: 6px;
-                                            filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.05));
-                                            cursor: move;
-                                        }
-                                        
-                                        @media screen and (max-width: 600px) {
+                                                html {
+                                                font-family: Helvetica, sans-serif;
+                                            }
+                                            /* Style the tab */
+                                            
+                                            p {
+                                                margin: 0;
+                                                padding: 0px 0 0 0;
+                                            }
+                                            
+                                            .tab {
+                                                overflow: hidden;
+                                                margin-bottom: 4rem;
+                                                /* background-color: #f1f1f1; */
+                                            }
+                                            
                                             .tablinks {
-                                                font-size: 2em;
-                                                width: 90%;
-                                                text-align: left;
+                                                font-size: 60px;
                                             }
+                                            
+                                            .tablinks.active {
+                                                text-decoration: underline;
+                                            }
+                                            /* Style the buttons that are used to open the tab content */
+                                            
                                             #instructions {
-                                                display: none;
+                                                margin-top: 1rem;
+                                                padding: 1rem 16px 1rem 16px;
+                                                height: 15px
                                             }
-                                            img {
-                                                left: 50%;
-                                                margin-left: -125px;
-                                                margin-bottom: 2rem;
-                                                filter: none;
+                                            
+                                            .tab button {
+                                                background-color: inherit;
+                                                float: left;
+                                                border: none;
+                                                outline: none;
+                                                cursor: pointer;
+                                                padding: 10px 16px;
+                                                transition: 0.3s;
                                             }
-                                            .draggable {
-                                                filter: none;
-                                                width: 250px;
-                                                height: 250px;
+                                            
+                                            .red {
+                                                color: red;
                                             }
+                                            
+                                            .orange {
+                                                color: orange;
+                                            }
+                                            
+                                            .yellow {
+                                                color: yellow;
+                                            }
+                                            
+                                            .green {
+                                                color: green;
+                                            }
+                                            
+                                            .blue {
+                                                color: blue;
+                                            }
+                                            /* Style the tab content */
+                                            
                                             .tabcontent {
                                                 display: none;
-                                                padding: 1rem 12px 3rem 12px;
+                                                padding: 0 12px 1rem 12px;
                                                 font-size: 32px;
                                             }
-                                            .tab {
-                                                margin-bottom: 1rem;
+                                            
+                                            img {
+                                                width: 300px;
+                                                position: absolute;
                                             }
+                                            
+                                            .draggable {
+                                                display: none;
+                                                width: 300px;
+                                                height: 300px;
+                                                border-radius: 6px;
+                                                cursor: move;
+                                            }
+                                            
+                                            @media screen and (max-width: 600px) {
+                                                .tablinks {
+                                                    font-size: 2em;
+                                                    width: 90%;
+                                                    text-align: left;
+                                                }
+                                                #instructions {
+                                                    display: none;
+                                                }
+                                                img {
+                                                    left: 50%;
+                                                    margin-left: -125px;
+                                                    margin-bottom: 2rem;
+                                                    filter: none;
+                                                }
+                                                .draggable {
+                                                    filter: none;
+                                                    width: 250px;
+                                                    height: 250px;
+                                                }
+                                                .tabcontent {
+                                                    display: none;
+                                                    padding: 1rem 12px 3rem 12px;
+                                                    font-size: 32px;
+                                                }
+                                                .tab {
+                                                    margin-bottom: 1rem;
+                                                }
