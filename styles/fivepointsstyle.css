@@ -1,103 +1,105 @@
-html {
-    font-family: Helvetica, sans-serif;
-}
-
-
-/* Style the tab */
-
-p {
-    margin: 0;
-    padding: 0px 0 0 0;
-}
-
-.tab {
-    overflow: hidden;
-    /* background-color: #f1f1f1; */
-}
-
-.tablinks {
-    font-size: 60px;
-}
-
-.tablinks.active {
-    text-decoration: underline;
-}
-
-
-/* Style the buttons that are used to open the tab content */
-
-#instructions {
-    padding: 8px 16px;
-    height: 15px
-}
-
-.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 10px 16px;
-    transition: 0.3s;
-}
-
-.red {
-    color: red;
-}
-
-.orange {
-    color: orange;
-}
-
-.yellow {
-    color: yellow;
-}
-
-.green {
-    color: green;
-}
-
-.blue {
-    color: blue;
-}
-
-
-/* Style the tab content */
-
-.tabcontent {
-    display: none;
-    padding: 5rem 12px;
-    font-size: 32px;
-}
-
-img {
-    width: 300px;
-    position: absolute;
-}
-
-.draggable {
-    display: none;
-    width: 300px;
-    height: 300px;
-    border-radius: 6px;
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.05));
-    cursor: move;
-}
-
-@media screen and (max-width: 600px) {
-    .tablinks {
-        font-size: 2em;
-        width: 70%;
-        text-align: left;
-    }
-    #instructions {
-        display: none;
-    }
-    img {
-        width: 300px;
-        position: relative;
-    }
-    .draggable {
-        margin: 2rem auto 2rem auto
-    }
-}
+                    html {
+                    font-family: Helvetica, sans-serif;
+                }
+                /* Style the tab */
+                
+                p {
+                    margin: 0;
+                    padding: 0px 0 0 0;
+                }
+                
+                .tab {
+                    overflow: hidden;
+                    /* background-color: #f1f1f1; */
+                }
+                
+                .tablinks {
+                    font-size: 60px;
+                }
+                
+                .tablinks.active {
+                    text-decoration: underline;
+                }
+                /* Style the buttons that are used to open the tab content */
+                
+                #instructions {
+                    padding: 8px 16px;
+                    height: 15px
+                }
+                
+                .tab button {
+                    background-color: inherit;
+                    float: left;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    padding: 10px 16px;
+                    transition: 0.3s;
+                }
+                
+                .red {
+                    color: red;
+                }
+                
+                .orange {
+                    color: orange;
+                }
+                
+                .yellow {
+                    color: yellow;
+                }
+                
+                .green {
+                    color: green;
+                }
+                
+                .blue {
+                    color: blue;
+                }
+                /* Style the tab content */
+                
+                .tabcontent {
+                    display: none;
+                    padding: 5rem 12px;
+                    font-size: 32px;
+                }
+                
+                img {
+                    width: 300px;
+                    position: absolute;
+                }
+                
+                .draggable {
+                    display: none;
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 6px;
+                    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.05));
+                    cursor: move;
+                }
+                
+                @media screen and (max-width: 600px) {
+                    .tablinks {
+                        font-size: 2em;
+                        width: 90%;
+                        text-align: left;
+                    }
+                    #instructions {
+                        display: none;
+                    }
+                    img {
+                        left: 50%;
+                        margin-left: -125px;
+                        margin-bottom: 1rem;
+                        filter: none;
+                    }
+                    .draggable {
+                        filter: none;
+                        width: 250px;
+                        height: 250px;
+                    }
+                    .tabcontent {
+                        display: none;
+                        padding: 5rem 12px 3rem 12px;
+                        font-size: 32px;
+                    }

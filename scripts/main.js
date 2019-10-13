@@ -33,7 +33,16 @@ for (var i = 0; i < draggableElems.length; i++) {
 
 
 function showhide(divvy) {
+    var elements = document.getElementsByTagName("*");
+    var highest_index = 0;
+
+    for (var i = 0; i < elements.length - 1; i++) {
+        if (parseInt(elements[i].style.zIndex) > highest_index) {
+            highest_index = parseInt(elements[i].style.zIndex);
+        }
+    }
     document.getElementById(divvy).style.display = "block";
+    document.getElementById(divvy).style.zIndex = highest_index + 1;
 }
 
 
