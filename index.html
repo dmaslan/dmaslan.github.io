@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>FIVE POINTS</title>
+    <link href="styles/fromscratch.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="menu">
+        <div class="Level_1">
+            <h1 class="Level_1">About</h1>
+            <p class="Level_2">This is a thesis project.</p>
+        </div>
+        <div class="Level_1">
+            <h1 class="Level_1">Statement</h1>
+            <h2 class="Level_2">9/13/2019</h2>
+            <p class="Level_2">Kiids need to learn to make architecture and they’re not going to do it with Rhino. These days, they’re not going to do it with a pencil and paper either. Existing “construction set” toys, based on industrial models of mass production and
+                modularity, are sorely out of sync with contemporary modes of architectural production brought on by BIM, parametric design, and digital mass customization.
+                <br><br> It goes without saying that 3D modeling software and digital fabrication tools have changed the way architects produce and are slowly changing the way buildings are constructed. But these tools have also fundamentally changed
+                the way we conceive of and understand three-dimensional objects and “spaces.” For better or for worse, whether or not we like to admit it, we no longer design with plans, sections, elevations, or physical models. We design with NURBs,
+                meshes, number sliders, and vectors (just to name a few). We don’t draw anymore. We model, bake, Make2D, scale, unroll, export, import, and save as.
+                <br><br> Working digitally does not necessitate digital fabrication tools such as 3D printers, Zünds, laser cutters, robots, or CNC mills. Rather, these tools necessitated a new way of working into which we’ve all by now been indoctrinated.
+                If we can accept that this has happened, perhaps we can start to think about setting aside these machines and taking stock of what we are left with. What imprints have these techniques left on our designs and, perhaps more importantly,
+                on our systems of annotation?
+                <br><br> By now you may be wondering, “what does any of this have to do with kids?” I am suggesting that computer-aided design and fabrication technologies have transformed architectural labor from an activity (requiring little more than
+                a pencil and paper) that was relatively accessible to curious minds of all ages into one whose demand for the skillful choreography of a multiplicity of incongruous digital environments and processes makes it impenetrable to anyone not
+                already well versed in its minutiae. But if we can distill the essence of our commands, plugins, workflows, and workarounds into a kid-friendly system, maybe we can create a new system of representation that exploits or at least acknowledges
+                the patterns and ways of thinking that are taken for granted in digital design. And, in the process, maybe we can make it more fun. Because play can be work too.</p>
+        </div>
+        <div class="Level_1">
+            <h1 id="FivePoints" class="Level_1">Five Points/Toys</h1>
+            <br class="Level_2">
+            <div class="Level_2">
+                <h1 class="Level_2 red" onclick="showhide('transparentImage'); showInstructions()">Transparent</h1>
+                <p class="Level_3 red">An object should be an index of the digital tools and processes used to produce it, so as to make the influence of software as transparent as possible</p>
+            </div>
+            <div class="Level_2">
+                <h1 class="Level_2 orange" onclick="showhide('thinImage'); showInstructions()">Thin</h1>
+                <p class="Level_3 orange">In a digital environment, there is no such thing as thickness. All forms are hollow and their boundaries infinitely thin. If we acknowledge this in the analog world, our forms may be freed from certain material conventions.</p>
+            </div>
+            <div class="Level_2">
+                <h1 class="Level_2 yellow" onclick="showhide('representationalImage'); showInstructions()"> Representational </h1>
+                <p class="Level_3 yellow">A representation’s material(s) should act as placeholder(s), emulating the referent’s logic of assembly but not mimicking its material qualities.</p>
+            </div>
+            <div class="Level_2">
+                <h1 class="Level_2 green" onclick="showInstructions()">Custom</h1>
+                <p class="Level_3 green">It is no longer cheaper to produce the same thing 100 times than it is to produce 100 different things 1 time. Our designs need no longer be bound by the constraints of mass production and modularity.</p>
+            </div>
+            <div class="Level_2">
+                <h1 class="Level_2 blue" onclick="showhide('opensourceImage'); showInstructions()">Open Source</h1>
+                <p class="Level_3 blue">An object’s “source code” (all information required for its production) should be publicly accessible and embedded in its construction.</p>
+            </div>
+        </div>
+        <div class="Level_1">
+            <h1 class="Level_1">Wiki</h1>
+        </div>
+    </div>
+    <p id="instructions"></p>
+
+
+    <img id="transparentImage" class="draggable" src="images/transparent.jpg" alt="Transparent">
+    <img id="thinImage" class="draggable" src="images/thin.jpg" alt="Thin">
+    <img id="representationalImage" class="draggable" src="images/representational.jpg" alt="Thin">
+    <img id="opensourceImage" class="draggable" src="images/open-source.jpg" alt="Thin">
+</body>
+
+
+<script src="scripts/fromscratch.js"></script>
+
+
+</html>
