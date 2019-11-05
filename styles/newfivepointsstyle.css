@@ -1,14 +1,7 @@
     html {
         font-family: Helvetica, sans-serif;
     }
-    
-    .level_2 {
-        display: none;
-    }
-    
-    .main {
-        display: inline;
-    }
+    /* Style the tab */
     
     p {
         margin: 0;
@@ -30,19 +23,29 @@
         font-size: 60px;
     }
     
+    .tablinks.active {
+        text-decoration: underline;
+    }
+    /* Style the buttons that are used to open the tab content */
+    
     #instructions {
         margin-top: 1rem;
         padding: 1rem 16px 1rem 16px;
         height: 15px
     }
     
-    .level_1 button {
+    .tab button {
         background-color: inherit;
+        float: left;
         border: none;
         outline: none;
         cursor: pointer;
         padding: 10px 16px;
         transition: 0.3s;
+    }
+    
+    .fivepoints {
+        display: none
     }
     
     .red {

@@ -1,0 +1,100 @@
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 4rem;
+}
+
+.red {
+    color: red;
+}
+
+.orange {
+    color: orange;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}
+
+.menu {
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.FivePoints_Container {
+    display: block;
+    border: solid;
+}
+
+#FivePoints {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+h2.Level_2_vis {
+    display: block;
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+p.Level_2_vis {
+    font-size: 2rem;
+    margin: 1rem 0;
+    padding: 1 0;
+    display: block;
+}
+
+p {
+    font-size: 2rem;
+    margin: 0;
+    padding: 1 0;
+    display: block;
+}
+
+.Level_1 {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+.Level_2 {
+    display: none;
+}
+
+.Level_2_vis {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+.Level_3 {
+    display: none;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-color: inherit;
+}
+
+.draggable {
+    display: none;
+    width: 300px;
+    height: 300px;
+    border-radius: 6px;
+    cursor: move;
+    position: absolute;
+}

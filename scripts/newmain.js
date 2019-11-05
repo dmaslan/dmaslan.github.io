@@ -18,7 +18,30 @@
 //     document.getElementById(cityName).style.display = "block";
 //     evt.currentTarget.className += " active";
 // }
+$(document).ready(function() {
 
+    $(".Level_3").click(function(e) {
+        if ($(e.target).is('.Level_3')) {
+            $(this).find(".Level_4").toggle();
+        }
+    });
+
+    $(".Level_2").click(function(e) {
+        if ($(e.target).is('.Level_2')) {
+            $(this).find(".Level_3").toggle();
+        }
+    });
+
+    $(".Level_1").click(function(e) {
+        if ($(e.target).is('.Level_1')) {
+            $(this).find(".Level_2").toggle();
+        }
+    });
+
+    $(".Level_1").click(function() {
+        $(".tablinks", this).toggleClass('underline');
+    });
+});
 var draggableElems = document.querySelectorAll('.draggable');
 // array of Draggabillies
 var draggies = []
@@ -32,36 +55,19 @@ for (var i = 0; i < draggableElems.length; i++) {
 }
 
 
-function showhide(divvy) {
-    var elements = document.getElementsByTagName("*");
-    var highest_index = 0;
+// function showhide(divvy) {
+//     var elements = document.getElementsByTagName("*");
+//     var highest_index = 0;
 
-    for (var i = 0; i < elements.length - 1; i++) {
-        if (parseInt(elements[i].style.zIndex) > highest_index) {
-            highest_index = parseInt(elements[i].style.zIndex);
-        }
-    }
-    document.getElementById(divvy).style.display = "block";
-    document.getElementById(divvy).style.zIndex = highest_index + 1;
-}
+//     for (var i = 0; i < elements.length - 1; i++) {
+//         if (parseInt(elements[i].style.zIndex) > highest_index) {
+//             highest_index = parseInt(elements[i].style.zIndex);
+//         }
+//     }
+//     document.getElementById(divvy).style.display = "block";
+//     document.getElementById(divvy).style.zIndex = highest_index + 1;
+// }
 
-function toggle(content) {
-    var x = document.getElementsByClassName(content);
-    $(x).toggle();
-    // $(x).click(function() {
-    //     //     $(this).siblings().removeClass('underline');
-    //     //     $(this).toggleClass('underline');
-    // });
-}
-
-$('.inline').on('click', function(e) {
-    $('.level_2').toggleClass("main"); //you can list several class names 
-    e.preventDefault();
-});
-
-$(".tablinks").click(function() {
-    $(this).toggleClass('underline');
-});
 
 function changepic() {
     var imgElement = document.getElementsByClassName('draggable');
