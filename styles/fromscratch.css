@@ -3,6 +3,10 @@ body {
     font-size: 4rem;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 .red {
     color: red;
 }
@@ -96,12 +100,6 @@ a:after {
 
 .Level_3 {
     display: none;
-}
-
-.underline {
-    text-decoration: inherit;
-    text-decoration: underline;
-    text-decoration-color: inherit;
 }
 
 .draggable {
