@@ -140,7 +140,7 @@ a:after {
     img {
         left: 50%;
         margin-left: -125px;
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
         filter: none;
     }
     .draggable {
