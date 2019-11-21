@@ -99,6 +99,7 @@ a:after {
 }
 
 .underline {
+    text-decoration: inherit;
     text-decoration: underline;
     text-decoration-color: inherit;
 }

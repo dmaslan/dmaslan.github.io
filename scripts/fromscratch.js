@@ -23,7 +23,7 @@ $(document).ready(function() {
 
 // *Active Underline*
 $(document).ready(function() {
-    $("h1").click(function() {
+    $("h1, s").click(function() {
         $(this).toggleClass('underline');
     });
 });
