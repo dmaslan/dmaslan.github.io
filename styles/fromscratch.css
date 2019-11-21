@@ -1,6 +1,9 @@
+html {
+    font-size: 2rem
+}
+
 body {
     font-family: Helvetica, sans-serif;
-    font-size: 4rem;
 }
 
 .underline {
@@ -51,7 +54,7 @@ h1 {
 }
 
 p {
-    font-size: 2rem;
+    /* font-size: 2rem; */
     margin: 0;
     padding: 1 0;
     display: block;
@@ -61,6 +64,14 @@ p {
 a {
     text-decoration: none;
     color: black;
+}
+
+a.Level_1 {
+    font-size: 2rem;
+}
+
+s.Level_2 {
+    font-size: 2rem;
 }
 
 .Level_1 {
@@ -86,14 +97,14 @@ a {
 
 h2.Level_2_vis {
     display: block;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     font-weight: normal;
     margin: 1rem 0;
     padding: 0;
 }
 
 p.Level_2_vis {
-    font-size: 2rem;
+    /* font-size: 2rem; */
     margin: 1rem 0;
     padding: 1 0;
     display: block;
@@ -112,6 +123,8 @@ a:after {
     position: absolute;
 }
 
+
+/* 
 @media screen and (max-width: 600px) {
     body {
         font-size: 1.5rem;
@@ -145,4 +158,4 @@ a:after {
         width: 250px;
         height: 250px;
     }
-}
+} */
