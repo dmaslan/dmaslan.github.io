@@ -45,7 +45,6 @@ body {
 }
 
 h1 {
-    font-size: 4rem;
     font-weight: normal;
     margin: 0;
     padding: 0;
@@ -111,4 +110,39 @@ a:after {
     border-radius: 6px;
     cursor: move;
     position: absolute;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 1.5rem;
+    }
+    .Level_1,
+    .Level_2,
+    .Level_3 {
+        width: 90%;
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    p.Level_2_vis {
+        font-size: 1rem;
+    }
+    p.Level_3 {
+        font-size: 1rem;
+    }
+    #instructions {
+        display: none;
+    }
+    img {
+        left: 50%;
+        margin-left: -125px;
+        margin-bottom: 2rem;
+        filter: none;
+    }
+    .draggable {
+        filter: none;
+        width: 250px;
+        height: 250px;
+    }
 }
