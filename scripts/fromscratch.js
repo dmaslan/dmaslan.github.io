@@ -94,3 +94,15 @@ par.innerHTML = par.innerHTML.split('').map(function(c) {
 
 var element = document.getElementById("FivePoints");
 element.classList.add("Level_1");
+
+var s_saver;
+
+$('body').mousemove(function() {
+    clearTimeout(s_saver);
+
+    s_saver = setTimeout(function() {
+        $('#screensaver').fadeIn(600000);
+    }, 4000);
+
+    $('#screensaver').fadeOut(100);
+});

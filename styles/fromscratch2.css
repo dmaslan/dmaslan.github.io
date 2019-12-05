@@ -61,8 +61,23 @@ a {
     position: absolute;
 }
 
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 6px;
+    cursor: move;
+    position: absolute;
+}
+
 .menu {
     margin: 1rem 1rem 1rem 1rem;
+}
+
+#close {
+    display: inline;
+    position: absolute;
+    padding: 10px 10px;
+    background: #ccc;
 }
 
 
@@ -110,6 +125,19 @@ p.Level_2_vis {
 
 a:after {
     content: "↗︎";
+}
+
+#screensaver {
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    font-size: 5rem;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    /* margin is -0.5 * dimension */
+    margin-top: -25px;
+    text-align: center;
 }
 
 @media screen and (max-width: 600px) {
